@@ -95,6 +95,7 @@ dev-postgres:
   auth:
     username: ortadmin
     password: ortpassword
+    database: ortserver
   persistence:
     enabled: false
   customUser:
