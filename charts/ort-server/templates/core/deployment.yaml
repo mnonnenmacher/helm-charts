@@ -65,6 +65,12 @@ spec:
               value: {{ .Values.core.keycloak.jwtUri }}
             - name: JWT_ISSUER
               value: {{ .Values.core.keycloak.jwtIssuer }}
+            - name: JWT_AUDIENCE
+              value: {{ .Values.core.keycloak.jwtAudience }}
+            - name: JWT_REALM
+              value: {{ .Values.core.keycloak.jwtRealm }}
+            - name: JWT_ROLE_CACHE_LIFETIME
+              value: {{ .Values.core.keycloak.jwtRoleCacheLifetime | quote }}
             - name: KEYCLOAK_ACCESS_TOKEN_URL
               value: {{ .Values.core.keycloak.accessTokenUrl }}
             - name: KEYCLOAK_API_URL

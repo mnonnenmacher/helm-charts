@@ -66,6 +66,9 @@ core:
   keycloak:
     jwtUri: https://keycloak.ortserver.org/realms/master/protocol/openid-connect/certs
     jwtIssuer: https://keycloak.ortserver.org/realms/master
+    jwtAudience: ort-server
+    jwtRealm: ort-server
+    jwtRoleCacheLifetime: 60
     accessTokenUrl: https://keycloak.ortserver.org/realms/master/protocol/openid-connect/token
     apiUrl: https://keycloak.ortserver.org/admin/realms/master
     apiUser: ort-server
