@@ -690,11 +690,11 @@ dev-keycloak:
       kind: Service
       metadata:
         name: dev-keycloak-nodeport
-        namespace: default # "{{ .Release.Namespace }}" (templating in extraobjects is broken in Keycloak chart)
+        namespace: "{{ .Release.Namespace }}"
       spec:
         type: NodePort
         selector:
-          app.kubernetes.io/instance: dev # "{{ .Release.Name }}" (templating in extraobjects is broken in Keycloak chart)
+          app.kubernetes.io/instance: "{{ .Release.Name }}"
           app.kubernetes.io/name: dev-keycloak
         ports:
           - name: keycloak
