@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/mnonnenmacher/helm-charts/compare/ort-server-v0.1.0...ort-server-v0.2.0) (2026-02-11)
+
+
+### Features
+
+* Some minor change ([27f2d11](https://github.com/mnonnenmacher/helm-charts/commit/27f2d11f4230da4a7b29c9f67c7d88e5f029bbdb))
+
 ## [0.1.0](https://github.com/mnonnenmacher/helm-charts/compare/ort-server-v0.0.1...ort-server-v0.1.0) (2026-02-11)
 
 
