@@ -53,4 +53,5 @@ jobs:
         GH_TOKEN: ${{ secrets.RELEASE_PLEASE_TOKEN }}
       run: |
         VERSION=${{ steps.release.outputs['charts/ort-server--version'] }}
-        gh release upload ort-server-$VERSION ort-server-$VERSION.tgz
+        TAG_NAME=${{ steps.release.outputs['charts/ort-server--tag_name'] }}
+        gh release upload $TAG_NAME ort-server-$VERSION.tgz
