@@ -11,6 +11,17 @@
 
 * Some major change ([28d6d15](https://github.com/mnonnenmacher/helm-charts/commit/28d6d1554367a3794f6cce4be1a81115b3ba0dd4))
 
+## [0.3.0](https://github.com/mnonnenmacher/helm-charts/compare/ort-server-v0.2.0...ort-server-v0.3.0) (2026-02-11)
+
+
+### ⚠ BREAKING CHANGES
+
+* Some major change
+
+### Features
+
+* Some major change ([28d6d15](https://github.com/mnonnenmacher/helm-charts/commit/28d6d1554367a3794f6cce4be1a81115b3ba0dd4))
+
 ## [0.2.0](https://github.com/mnonnenmacher/helm-charts/compare/ort-server-v0.1.0...ort-server-v0.2.0) (2026-02-11)
 
 
