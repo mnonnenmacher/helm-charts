@@ -1,5 +1,5 @@
 {{/*
-Render a value that might contain templates. Test
+Render a value that might contain templates. Test Major
 */}}
 {{- define "tplvalues.render" -}}
   {{- $value := typeIs "string" .value | ternary .value (.value | toYaml) }}
