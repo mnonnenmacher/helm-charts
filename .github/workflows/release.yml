@@ -45,7 +45,13 @@ jobs:
         REPO_OWNER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
         
         helm package charts/ort-server
-        helm push ort-server-$VERSION.tgz oci://ghcr.io/$REPO_OWNER/charts
+        helm push ort-server-$VERSION.tgz oci://ghcr.io/$REPO_OWNER/charts \
+          --annotation "org.opencontainers.image.source=https://github.com/${{ github.repository }}" \
+          --annotation "org.opencontainers.image.description=ORT Server Helm Chart" \
+          --annotation "org.opencontainers.image.url=https://github.com/${{ github.repository }}" \
+          --annotation "org.opencontainers.image.documentation=https://github.com/${{ github.repository }}/blob/main/charts/ort-server/README.md" \
+          --annotation "org.opencontainers.image.version=$VERSION" \
+          --annotation "org.opencontainers.image.revision=${{ github.sha }}"
 
     - name: Upload ORT Server Chart to GitHub Release
       if: ${{ steps.release.outputs['charts/ort-server--release_created'] }}
