@@ -6,6 +6,7 @@
       "changelog-path": "CHANGELOG.md",
       "include-component-in-tag": true,
       "always-update": true,
+      "bump-minor-pre-major": true,
       "pull-request-header": "Create a release for the ORT Server Helm chart",
       "changelog-sections": [
         { "type": "feat", "section": "Features" },
